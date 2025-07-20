@@ -1,0 +1,61 @@
+﻿state,pollutions_source,Year,Emissions
+CA,Highway Vehicles,2024,653179.57
+CA,Offhighway,2024,1231508.9
+CA,Wild fires,2024,1524242.6
+CA,Prescribe Fires,2024,261844.27
+FL,Highway Vehicles,2024,1221009.8
+FL,Offhighway,2024,1159464.5
+FL,Wild fires,2024,161084.84
+FL,Prescribe Fires,2024,1569634.4
+TX,Highway Vehicles,2024,1327247.8
+TX,Offhighway,2024,925359.2
+TX,Wild fires,2024,474556.3
+TX,Prescribe Fires,2024,1423498.8
+CA,Highway Vehicles,2025,653263.8
+CA,Offhighway,2025,1231604.4
+CA,Wild fires,2025,1524244.1
+CA,Prescribe Fires,2025,262005.65
+FL,Highway Vehicles,2025,1221035.4
+FL,Offhighway,2025,1159529.7
+FL,Wild fires,2025,161197.46
+FL,Prescribe Fires,2025,1569735.6
+TX,Highway Vehicles,2025,1327323.5
+TX,Offhighway,2025,925427.37
+TX,Wild fires,2025,474309.42
+TX,Prescribe Fires,2025,1423630.1
+CA,Highway Vehicles,2026,653291.6
+CA,Offhighway,2026,1231636.7
+CA,Wild fires,2026,1524244
+CA,Prescribe Fires,2026,262036.22
+FL,Highway Vehicles,2026,1221042.2
+FL,Offhighway,2026,1159552.1
+FL,Wild fires,2026,161220.5
+FL,Prescribe Fires,2026,1569767
+TX,Highway Vehicles,2026,1327351.7
+TX,Offhighway,2026,925464.23
+TX,Wild fires,2026,474374.33
+TX,Prescribe Fires,2026,1423677.4
+CA,Highway Vehicles,2027,653301.45
+CA,Offhighway,2027,1231648.3
+CA,Wild fires,2027,1524244
+CA,Prescribe Fires,2027,262041.23
+FL,Highway Vehicles,2027,1221044.1
+FL,Offhighway,2027,1159560.7
+FL,Wild fires,2027,161224.91
+FL,Prescribe Fires,2027,1569776.9
+TX,Highway Vehicles,2027,1327363.3
+TX,Offhighway,2027,925487.6
+TX,Wild fires,2027,474353.8
+TX,Prescribe Fires,2027,1423694.3
+CA,Highway Vehicles,2028,653304.93
+CA,Offhighway,2028,1231652.5
+CA,Wild fires,2028,1524244
+CA,Prescribe Fires,2028,262042.02
+FL,Highway Vehicles,2028,1221044.6
+FL,Offhighway,2028,1159564.1
+FL,Wild fires,2028,161225.74
+FL,Prescribe Fires,2028,1569779.9
+TX,Highway Vehicles,2028,1327368
+TX,Offhighway,2028,925503.7
+TX,Wild fires,2028,474360.08
+TX,Prescribe Fires,2028,1423700.3
