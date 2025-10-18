@@ -26,7 +26,7 @@ def set_bg_hack():
 set_bg_hack()
 
 st.header("Data")
-data_path = '/Users/srikarkarri/PycharmProjects/GreenhouseGas.py/EPA_US_transformed.xlsx - Sheet1.csv'
+data_path = 'EPA_US_transformed.xlsx - Sheet1.csv'
 data = pd.read_csv(data_path)
 st.write("View Source Data")
 #st.write(data)
