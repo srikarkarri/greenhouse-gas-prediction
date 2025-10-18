@@ -27,7 +27,7 @@ def set_bg_hack():
 set_bg_hack()
 
 st.header("Data Analysis and Visualization")
-data_path = '/Users/srikarkarri/PycharmProjects/GreenhouseGas.py/EPA_US_transformed.xlsx - Sheet1.csv'
+data_path = 'EPA_US_transformed.xlsx - Sheet1.csv'
 data = pd.read_csv(data_path)
 group_by_state =data.groupby('State').sum().reset_index().copy()
 group_by_source = data.groupby('Tier 1 Description').sum().reset_index().copy()
