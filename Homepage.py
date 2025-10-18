@@ -56,7 +56,7 @@ st.text("AI powered app for predicting future greenhouse gas emissions")
 st.text("")
 st.text("")
 st.subheader("Every year, the United States emits nearly 6 billion metric tons of greenhouse gases.")
-st.image("/Users/srikarkarri/PycharmProjects/GreenhouseGas.py/venv/background.png", caption="Image taken from ourworldindata.org")
+st.image("background.png", caption="Image taken from ourworldindata.org")
 st.text("")
 
 #**********************************
