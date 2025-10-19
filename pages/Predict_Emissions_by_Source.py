@@ -4,7 +4,7 @@ import os
 
 st.set_page_config(page_title="Emission Prediction By Tier", page_icon="🌍", layout="centered")
 
-with open('masterDictionaryNoState', 'rb') as file:
+with open('../masterDictionaryNoState', 'rb') as file:
   master_dict = pickle.load(file)
 
 print(master_dict)
