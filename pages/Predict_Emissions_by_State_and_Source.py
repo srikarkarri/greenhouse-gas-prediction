@@ -4,7 +4,7 @@ import os
 
 st.set_page_config(page_title="Emission Prediction by State and Source", page_icon="🌍", layout="centered")
 
-with open('/Users/srikarkarri/PycharmProjects/GreenhouseGas.py/masterDictionary', 'rb') as file:
+with open('masterDictionary', 'rb') as file:
   master_dict = pickle.load(file)
 
 print(master_dict)
