@@ -1,3 +1,2 @@
-langchain.embeddings
 langchain
 plotly
