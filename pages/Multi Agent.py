@@ -2,7 +2,7 @@ import os
 from pathlib import Path
 import streamlit as st
 import pandas as pd
-from langchain_openai import OpenAIEmbeddings, openAI
+from langchain_openai import OpenAIEmbeddings, OpenAI
 from langchain_community.vectorstores import Chroma
 from langchain.llms import OpenAI
 from langchain.prompts import PromptTemplate
