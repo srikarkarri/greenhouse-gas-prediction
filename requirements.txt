@@ -2,12 +2,8 @@ langchain
 langchain-community
 langchain-openai
 langchain-text-splitters
-langchain-chroma
-openai
-streamlit
-pandas
 speechrecognition
-matplotlib
+plotly
 pydub
 st-audiorec
 gtts
