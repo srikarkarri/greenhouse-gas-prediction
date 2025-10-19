@@ -8,4 +8,3 @@ pydub
 speechrecognition
 gTTS
 pyttsx3
-python-3.11.8
