@@ -30,7 +30,7 @@ set_bg_hack()
 st.title("Results")
 
 st.write("RMSE heatmap")
-with open('/Users/srikarkarri/PycharmProjects/GreenhouseGas.py/rmses', 'rb') as file:
+with open('rmses', 'rb') as file:
   rmses = pickle.load(file)
 
 data = [[0.03, 0.05, 0.17, 0.13], [0.04, 0.02, 0.14, 0.20], [0.04, 0.04, 0.10, 0.23]]
