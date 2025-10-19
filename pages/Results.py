@@ -39,7 +39,7 @@ fig = px.imshow(df, labels=dict(x='Pollution Sources',y='State',color="RMSE"),x=
 
 st.plotly_chart(fig, theme="streamlit")
 
-pred_data=pd.read_csv("/Users/srikarkarri/PycharmProjects/GreenhouseGas.py/Emission_predictions.csv")
+pred_data=pd.read_csv("Emission_predictions.csv")
 state_unscaled = st.selectbox("Please select the state", ('TX','CA','FL'))
 select_data = pred_data.loc[pred_data['State'] == state_unscaled]
 st.bar_chart(select_data,x="Pollution Source",y="Emissions Over Next 5 years")
