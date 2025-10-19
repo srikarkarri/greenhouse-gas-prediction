@@ -1,7 +1,2 @@
-streamlit
 langchain
-openai
 plotly
-os
-pandas
-pickle
