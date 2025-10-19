@@ -5,7 +5,6 @@ import pandas as pd
 from langchain_openai import OpenAIEmbeddings
 from langchain_community.vectorstores import Chroma
 try:
-    # Modern LangChain: LLM wrapper for OpenAI text models
     from langchain.llms import OpenAI
 except Exception:
     try:
