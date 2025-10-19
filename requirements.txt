@@ -8,6 +8,5 @@ pandas
 plotly
 pydub
 speechrecognition
-st-audiorec
-gTTS
+GTTs
 pyttsx3
