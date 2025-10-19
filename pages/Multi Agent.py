@@ -2,27 +2,38 @@ import os
 from pathlib import Path
 import streamlit as st
 import pandas as pd
-from langchain_openai import OpenAIEmbeddings
-from langchain_community.vectorstores import Chroma
+# Prefer modern langchain imports; fall back to older/community packages if necessary.
+try:
+    # Modern LangChain: embeddings, vectorstores, text splitters, prompts
+    from langchain.embeddings import OpenAIEmbeddings
+    from langchain.vectorstores import Chroma
+    from langchain.text_splitters import RecursiveCharacterTextSplitter
+    from langchain.prompts import PromptTemplate
+except Exception:
+    try:
+        # Older/community packages/paths
+        from langchain_openai import OpenAIEmbeddings
+        from langchain_community.vectorstores import Chroma
+        from langchain.text_spliter import RecursiveCharacterTextSplitter
+        from langchain.prompts import PromptTemplate
+    except Exception:
+        raise ImportError(
+            "Could not import required langchain components. Install 'langchain' and/or 'langchain-community'."
+        )
+
+# LLM wrapper: prefer the modern OpenAI LLM wrapper, fallback to ChatOpenAI or legacy.
 try:
     from langchain.llms import OpenAI
 except Exception:
     try:
-        # Some installs used a separate package exposing langchain_openai
-        from langchain_openai import OpenAI  # fallback for older setups
+        from langchain.chat_models import ChatOpenAI as OpenAI
     except Exception:
-        # If you actually want the chat interface (gpt-3.5-turbo / gpt-4),
-        # consider using ChatOpenAI instead:
         try:
-            from langchain.chat_models import ChatOpenAI as OpenAI
+            from langchain_openai import OpenAI  # legacy fallback
         except Exception:
             raise ImportError(
-                "Could not import an OpenAI client. Install 'langchain' and 'openai', "
-                "or adjust this import to match your LangChain version."
+                "Could not import an OpenAI client from LangChain. Install a compatible 'langchain' version."
             )
-
-from langchain.prompts import PromptTemplate
-from langchain.text_splitter import RecursiveCharacterTextSplitter
 import speech_recognition as sr
 from matplotlib.textpath import text_to_path
 from pydub import AudioSegment
