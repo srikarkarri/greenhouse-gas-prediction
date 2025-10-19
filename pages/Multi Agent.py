@@ -4,7 +4,7 @@ import streamlit as st
 import pandas as pd
 from langchain_openai import OpenAIEmbeddings
 from langchain_community.vectorstores import Chroma
-from langchain.llms import OpenAI
+from langchain_openai import OpenAI
 from langchain.prompts import PromptTemplate
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 import speech_recognition as sr
