@@ -4,7 +4,7 @@ import os
 
 st.set_page_config(page_title="Emission Prediction By State", page_icon="🌍", layout="centered")
 
-with open('/Users/srikarkarri/PycharmProjects/GreenhouseGas.py/masterDictionaryNoTier', 'rb') as file:
+with open('masterDictionaryNoTier', 'rb') as file:
   master_dict = pickle.load(file)
 
 print(master_dict)
