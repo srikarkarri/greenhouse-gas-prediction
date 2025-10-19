@@ -1,6 +1,13 @@
 langchain
 langchain-community
 langchain-text-splitters
-plotly
-langchain-openai
+chromadb
 openai
+streamlit
+pandas
+plotly
+pydub
+speechrecognition
+st-audiorec
+gTTS
+pyttsx3
