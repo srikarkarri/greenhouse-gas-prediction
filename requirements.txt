@@ -1,10 +1,4 @@
 langchain
 langchain-community
-langchain-openai
 langchain-text-splitters
-speechrecognition
 plotly
-pydub
-st-audiorec
-gtts
-pyttsx3
