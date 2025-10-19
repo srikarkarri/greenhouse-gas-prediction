@@ -3,8 +3,6 @@ langchain-community
 langchain-text-splitters
 chromadb
 openai
-streamlit
-pandas
 plotly
 pydub
 speechrecognition
