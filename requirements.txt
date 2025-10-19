@@ -1,2 +1,4 @@
 langchain
 plotly
+langchain-openai
+openai
