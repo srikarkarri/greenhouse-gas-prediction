@@ -4,7 +4,24 @@ import streamlit as st
 import pandas as pd
 from langchain_openai import OpenAIEmbeddings
 from langchain_community.vectorstores import Chroma
-from langchain_openai import OpenAI
+try:
+    # Modern LangChain: LLM wrapper for OpenAI text models
+    from langchain.llms import OpenAI
+except Exception:
+    try:
+        # Some installs used a separate package exposing langchain_openai
+        from langchain_openai import OpenAI  # fallback for older setups
+    except Exception:
+        # If you actually want the chat interface (gpt-3.5-turbo / gpt-4),
+        # consider using ChatOpenAI instead:
+        try:
+            from langchain.chat_models import ChatOpenAI as OpenAI
+        except Exception:
+            raise ImportError(
+                "Could not import an OpenAI client. Install 'langchain' and 'openai', "
+                "or adjust this import to match your LangChain version."
+            )
+
 from langchain.prompts import PromptTemplate
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 import speech_recognition as sr
