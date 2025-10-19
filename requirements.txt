@@ -8,3 +8,4 @@ pydub
 speechrecognition
 gTTS
 pyttsx3
+streamlit
