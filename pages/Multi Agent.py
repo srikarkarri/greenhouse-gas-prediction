@@ -2,8 +2,8 @@ import os
 from pathlib import Path
 import streamlit as st
 import pandas as pd
-from langchain.embeddings import OpenAIEmbeddings
-from langchain.vectorstores import Chroma
+from langchain_openai import OpenAIEmbeddings, openAI
+from langchain_community.vectorstores import Chroma
 from langchain.llms import OpenAI
 from langchain.prompts import PromptTemplate
 from langchain.text_splitter import RecursiveCharacterTextSplitter
