@@ -1,4 +1,14 @@
 langchain
-plotly
+langchain-community
 langchain-openai
+langchain-text-splitters
+langchain-chroma
 openai
+streamlit
+pandas
+speechrecognition
+matplotlib
+pydub
+st-audiorec
+gtts
+pyttsx3
